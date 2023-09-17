@@ -1,0 +1,14 @@
+.form{
+  
+    min-height: 80vh;
+	width: 95%;
+	max-width: 1600px;
+	padding: 2vw 4vw 6vw;
+	display: flex;
+	flex-direction: column;
+	
+
+}
+h1{
+	margin-top: 50px;
+}
