@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar-admin.css'
 import { Link } from 'react-router-dom'
+import List from '../../Cards/List'
 
 
 const Navbaradmin = () => {
@@ -32,6 +33,7 @@ const Navbaradmin = () => {
 </div>
 
 <div className='content'>
+ 
 </div>
 </div>
 </div>

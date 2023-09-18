@@ -38,6 +38,17 @@ function App() {
             Logout
           </button>
         ) : null}
+
+{isAuth ? (
+          <button
+            onClick={() => {
+              dispatch();
+              navigate("/");
+            }}
+          >
+            retour
+          </button>
+        ) : null}
       </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -46,7 +57,7 @@ function App() {
          
         
         <Route element={<PrivateRoute />}> 
-        <Route path="/list" element={<List />} />
+        <Route path="/list" element={<Card />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/serveurs" element={<Gestionserveur />} />
           <Route path="/users" element={<ProfilUsers   />} />

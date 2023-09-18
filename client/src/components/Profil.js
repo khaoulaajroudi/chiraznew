@@ -8,6 +8,7 @@ const Profil = () => {
   return (
    
     <div>
+      <Navbar/>
 
       <h1>hello si {user ? user.name : <h1>loading...</h1>}</h1>
       
@@ -15,5 +16,4 @@ const Profil = () => {
   );
 };
 
-export defaul
-      <Navbar/>t Profil;
+export default Profil
