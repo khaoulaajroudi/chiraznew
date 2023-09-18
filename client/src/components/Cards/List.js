@@ -11,6 +11,7 @@ const List = () => {
    dispatch(getproduit())
     }, [])
     const produits=useSelector((store)=>store.produit?.produit)
+    console.log(produits)
     const user=useSelector((store)=>store.user?.user)
     console.log(user)
   return (

@@ -19,16 +19,9 @@ function Home  () {
   return (
     <div className='form'>
       <Navbar />
-
-      <h1>Welcome to the home </h1>
-      {isAuth   ? (
-          <Navbaradmin />
-        ) : null}
-      
-      
-
-      
-    
+<div className="barr">
+      <img src="/images/barrr.PNG" alt="jj" />
+    </div>
     </div>
   )
 }

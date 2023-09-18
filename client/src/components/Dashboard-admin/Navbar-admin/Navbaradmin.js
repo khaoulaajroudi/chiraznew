@@ -8,9 +8,9 @@ const Navbaradmin = () => {
   return (
     <div className='box-menu'>
     <div className='navbarr'>
-  {/*<div className='nav-logo'>
+  <div className='nav-logo'>
         <img src='./images/logo.png' alt='logo'></img>
-  </div>*/}
+  </div>
     <div className='nav-icon'>
     <i class="fa-solid fa-building-shield"></i>
     <button className="mode-switch" title="Switch Theme">
@@ -24,9 +24,9 @@ const Navbaradmin = () => {
 <div className='box-content'>
 <div className='menu'>
     <ul className='link'>
-     <li><i class="fa-solid fa-address-card"></i><Link to="/users"> Profil</Link></li>
-        <li><i class="fa-solid fa-users"></i><Link to="/list"> Gestion Produits</Link></li>
-        <li><i class="fa-solid fa-paste"></i><Link to='/serveurs'> Gestion users</Link></li>
+     <li><i class="fa-solid fa-address-card"></i><Link to="/dashbord"> Profil</Link></li>
+        <li><i class="fa-solid fa-users"></i><Link to="/produits"> Gestion Produits</Link></li>
+        <li><i class="fa-solid fa-paste"></i><Link to='/users'> Gestion users</Link></li>
         <li><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</li>
     </ul>
 

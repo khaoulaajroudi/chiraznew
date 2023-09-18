@@ -2,27 +2,13 @@ import React, { useEffect, useState } from 'react'
 import  './Profile.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { userCurrent } from '../../JS/userSlice/userSlice'
+import Navbaradmin from './Navbar-admin/Navbaradmin'
 
 const ProfilUsers = ({data,user}) => {
-  const dispatch=useDispatch()
-  const [newuser, setnewuser] = useState({
-    user:data,
-    details:user
-  })
-  useEffect(() => {
-    dispatch((userCurrent))
-      }, [])
-      const users=useSelector((store)=>store.users?.commande)
-  console.log(users)
-  /*
-  const [tab, settab] = useState("user");
-  const products = useSelector((state) => state.product?.productlist);
-  const commandes = useSelector((state) => state.commande.commandelist);
-  const users = useSelector((state) => state.user.userlist);
-  const dispatch = useDispatch();
-  */
+
   return (
     <div>
+      <Navbaradmin />
        <div class="table">
                 
                     <tr>

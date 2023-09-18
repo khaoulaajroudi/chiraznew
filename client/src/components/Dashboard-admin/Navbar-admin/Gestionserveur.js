@@ -1,9 +1,11 @@
 import React from 'react'
 import './Gestion.css'
+import Navbaradmin from './Navbaradmin'
 
 const Gestionserveur = () => {
   return (
     <div>
+      <Navbaradmin />
       <div class="leaderboard">
   <header>
     <h1 class="leaderboard__title"><span className="leaderboard__title--top">List of</span><span class="leaderboard__title--bottom">users</span></h1>

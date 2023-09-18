@@ -13,6 +13,7 @@ import  Card from "./components/Cards/Card"
 import List from "./components/Cards/List";
 import Gestionserveur from "./components/Dashboard-admin/Navbar-admin/Gestionserveur";
 import ProfilUsers from "./components/Dashboard-admin/ProfilUsers";
+import Profiladmin from "./components/Dashboard-admin/Navbar-admin/Profiladmin";
 
 function App() {
   const isAuth = localStorage.getItem("token");
@@ -54,15 +55,12 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/login" element={<SignIN />} />
          <Route path="/register" element={<SignUp />} />
-         
-        
-        <Route element={<PrivateRoute />}> 
-        <Route path="/list" element={<Card />} />
+         <Route path="/list" element={<List/>} />  
+         <Route path="/dashbord" element={<Profiladmin  />} />
+          <Route path="/produits" element={< ProfilUsers/>} />
+          <Route path="/users" element={< Gestionserveur  />} />
+        <Route element={<PrivateRoute />}>
           <Route path="/profil" element={<Profil />} />
-          <Route path="/serveurs" element={<Gestionserveur />} />
-          <Route path="/users" element={<ProfilUsers   />} />
-
-
         </Route>{" "}
       </Routes>
 
