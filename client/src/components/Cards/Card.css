@@ -99,19 +99,6 @@ button:focus {
 	outline: 0;
 }
 
-
-
-
-
-
-	
-
-
-
-
-
-
-
 button > div:nth-child(6) {
 	position: absolute;
 	top: -50px;
@@ -120,14 +107,12 @@ button > div:nth-child(6) {
 	color: red;
 }
 
-
 .container1 {
 	position: relative;
 	height: 60px;
 	margin: auto;
 	line-height: 60px;
 }
-
 	.list-product{
     display: flex;
     justify-content: space-around;
